@@ -11,7 +11,7 @@ const WidgetDivs = document.querySelectorAll('.reddit_widget')
 WidgetDivs.forEach(Div => {
   ReactDOM.render(
     <React.StrictMode>
-      <App />
+      <App domElement={Div} />
     </React.StrictMode>,
     Div
   );
