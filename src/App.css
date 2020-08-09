@@ -1,38 +1,72 @@
-.App {
+.reddit_widget__app {
+  font-size: 16px;
+  padding: 0;
+  font-family: IBMPlexSans, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #222;
+  box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.reddit_widget__app a {
+  color: #5399d7;
+  transition: 0.2s ease-in-out all;
+}
+
+.reddit_widget__header {
+  margin: 0;
+  display: block;
+  font-size: 19px;
+  padding: 12px 6px;
+  background: #5399d7;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.reddit_widget__header a {
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.reddit_widget__inner {
+  padding: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.reddit_widget__inner a {
+  color: #222;
+  text-decoration: none;
+}
+
+.reddit_widget__post {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 6px 0;
 }
 
-.App-link {
-  color: #61dafb;
+
+.reddit_widget__posted_by {
+  font-size: 14px;
+  color: rgb(120, 124, 126);
+  padding: 0 0 6px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reddit_widget__posted_by a {
+  color: rgb(120, 124, 126);
+}
+
+a.reddit_widget__posted_by:hover {
+  text-decoration: underline;
+}
+
+a.reddit_widget__title {
+  font-weight: 500;
+}
+
+a.reddit_widget__title:hover {
+  color: #000;
+}
+
+.reddit_widget__powered_by {
+  text-align: center;
+  font-size: 14px;
 }
